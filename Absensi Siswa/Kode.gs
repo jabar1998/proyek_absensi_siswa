@@ -1,3 +1,4 @@
+// ============ UTIL: SETTINGS (Properties) ============
 function loadSetting(key) {
   const props = PropertiesService.getDocumentProperties();
   return props.getProperty(key) || '';
