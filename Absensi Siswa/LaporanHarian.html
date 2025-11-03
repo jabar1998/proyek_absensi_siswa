@@ -1,19 +1,17 @@
-<!-- LaporanHarian.html -->
 <div>
   <h3>Laporan Harian</h3>
   <div class="row g-3 align-items-end">
-    <div class="col-md-3">
+    <div class="col-md-4 col-12">
       <label class="form-label">Tanggal</label>
       <input type="date" class="form-control" id="lap-tanggal" required>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4 col-12">
       <label class="form-label">Kelas</label>
       <select id="lap-kelas" class="form-select"></select>
     </div>
-    <div class="col-md-6">
-      <button id="btn-tampilkan" class="btn btn-primary me-2">Tampilkan</button>
-      <!-- pakai id ini -->
-      <button id="btn-export-sheet" class="btn btn-outline-secondary">Cetak (Template PDF)</button>
+    <div class="col-md-4 col-12 d-grid gap-2 d-md-flex">
+      <button id="btn-tampilkan" class="btn btn-primary w-100">Tampilkan</button>
+      <button id="btn-export-sheet" class="btn btn-outline-secondary w-100">Cetak (Template PDF)</button>
     </div>
   </div>
   <div id="laporan-wrap" class="mt-3">
