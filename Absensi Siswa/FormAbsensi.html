@@ -1,0 +1,39 @@
+<div>
+  <h3>Input Absensi Harian</h3>
+  <form id="absensi-form">
+    <div class="mb-3">
+      <label for="tanggal" class="form-label">Tanggal</label>
+      <input type="date" class="form-control" id="tanggal" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="kelas" class="form-label">Pilih Kelas</label>
+      <select class="form-select" id="kelas" required>
+        <option selected disabled value="">Memuat daftar kelas...</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="siswa" class="form-label">Pilih Siswa</label>
+      <select class="form-select" id="siswa" required disabled>
+        <option selected disabled value="">Pilih kelas terlebih dahulu</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Status Kehadiran</label>
+      <div class="form-check"><input class="form-check-input" type="radio" name="status" id="statusAlfa" value="Alfa" required><label class="form-check-label" for="statusAlfa">Alfa</label></div>
+      <div class="form-check"><input class="form-check-input" type="radio" name="status" id="statusIzin" value="Izin"><label class="form-check-label" for="statusIzin">Izin</label></div>
+      <div class="form-check"><input class="form-check-input" type="radio" name="status" id="statusSakit" value="Sakit"><label class="form-check-label" for="statusSakit">Sakit</label></div>
+    </div>
+
+    <div class="mb-3">
+      <label for="keterangan" class="form-label">Keterangan (Opsional)</label>
+      <textarea class="form-control" id="keterangan" rows="2"></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Simpan Absensi</button>
+  </form>
+
+  <div id="status-message" class="mt-3"></div>
+</div>

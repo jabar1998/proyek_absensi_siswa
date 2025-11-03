@@ -1,0 +1,63 @@
+<div>
+  <h3>Data Siswa</h3>
+
+  <!-- Filter & Aksi -->
+  <div class="row g-3 align-items-end">
+    <div class="col-md-3">
+      <label class="form-label">Kelas</label>
+      <select id="ds-kelas" class="form-select"></select>
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Cari (NISN/Nama/Alamat/HP)</label>
+      <input id="ds-q" class="form-control" placeholder="Ketik lalu cari">
+    </div>
+    <div class="col-md-2 d-grid">
+      <button id="ds-cari" class="btn btn-primary">Cari</button>
+    </div>
+    <div class="col-md-3 d-grid">
+      <button id="ds-tambah" class="btn btn-success">Tambah Siswa</button>
+    </div>
+  </div>
+
+  <!-- Tabel -->
+  <div id="ds-wrap" class="mt-3">
+    <div class="alert alert-info">Silakan set filter lalu klik Cari.</div>
+  </div>
+</div>
+
+<!-- Modal Tambah/Edit -->
+<div class="modal fade" id="dsModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title" id="dsModalTitle">Tambah Siswa</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <input type="hidden" id="ds-original-nisn">
+        <div class="mb-3">
+          <label class="form-label">NISN</label>
+          <input id="ds-nisn" class="form-control" placeholder="Hanya angka, nol depan boleh">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Nama</label>
+          <input id="ds-nama" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Kelas</label>
+          <select id="ds-kelas-form" class="form-select"></select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Alamat</label>
+          <input id="ds-alamat" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">No HP</label>
+          <input id="ds-hp" class="form-control" placeholder="08xxxxxxxxxx">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="ds-simpan" class="btn btn-primary">Simpan</button>
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>

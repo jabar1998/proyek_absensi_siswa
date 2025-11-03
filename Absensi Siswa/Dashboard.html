@@ -1,0 +1,47 @@
+<div>
+  <h3>Dashboard Utama</h3>
+  <p>Ringkasan data absensi secara keseluruhan.</p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card text-white bg-danger mb-3">
+        <div class="card-header">Alfa Hari Ini</div>
+        <div class="card-body"><h5 class="card-title" id="alfa-today">0</h5></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-dark bg-warning mb-3">
+        <div class="card-header">Izin Hari Ini</div>
+        <div class="card-body"><h5 class="card-title" id="izin-today">0</h5></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-dark bg-info mb-3">
+        <div class="card-header">Sakit Hari Ini</div>
+        <div class="card-body"><h5 class="card-title" id="sakit-today">0</h5></div>
+      </div>
+    </div>
+  </div>
+
+  <h4 class="mt-4">Total Bulan Ini</h4>
+  <div class="row">
+    <div class="col-md-4"><p><strong>Total Alfa:</strong> <span id="alfa-month">0</span></p></div>
+    <div class="col-md-4"><p><strong>Total Izin:</strong> <span id="izin-month">0</span></p></div>
+    <div class="col-md-4"><p><strong>Total Sakit:</strong> <span id="sakit-month">0</span></p></div>
+  </div>
+
+  <h4 class="mt-4">Peringkat Ketidakhadiran Terbanyak (Bulan Ini)</h4>
+  <div class="row">
+    <div class="col-md-6">
+      <h5>Kelas Terbanyak</h5>
+      <ul class="list-group" id="kelas-terbanyak"><li class="list-group-item">Memuat data...</li></ul>
+    </div>
+    <div class="col-md-6">
+      <h5>Siswa Terbanyak</h5>
+      <ul class="list-group" id="siswa-terbanyak"><li class="list-group-item">Memuat data...</li></ul>
+    </div>
+  </div>
+
+  <h4 class="mt-4">Tren Ketidakhadiran 30 Hari</h4>
+  <div style="height:260px"><canvas id="trend-canvas"></canvas></div>
+</div>
